@@ -44,3 +44,11 @@ Define a function named calculateAverage which takes no parameters.
 This function will ask the user how many numbers they wish to input.
 This function will use the number of times to run the program within a for loop in order to calculate the total and average.
 This function will print the calculated average.
+
+## Week 6 [Week 6 Code](week_6.py)
+Create an empty list called temperatures.
+Allow the user to input a series of temperatures along with a sentinel value (do not use a number for a sentinel value) which will stop the user input.
+Evaluate the temperature list to determine the largest and smallest temperature.
+Print the largest temperature.
+Print the smallest temperature.
+Print a message that tells the user how many temperatures are in the list.
