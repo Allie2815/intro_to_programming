@@ -52,3 +52,13 @@ Evaluate the temperature list to determine the largest and smallest temperature.
 Print the largest temperature.
 Print the smallest temperature.
 Print a message that tells the user how many temperatures are in the list.
+
+## Week 8 [Week 8 Code](week_8.py)
+We will create a program which performs three essential operations. It will process this .txt file: Gettysburg.txt. Calculate the total words, and output the number of occurrences of each word in the file.
+Open the file and process each line.
+Either add each word to the dictionary with a frequency of 1 or update the word’s count by 1.
+Nicely print the output, in this case from high to low frequency. You should use string formatting for this. (See discussion 8.3).
+Your program should adhere to PEP8 guidelines especially as it pertains to variable names.
+
+## Week 9 [Week 9 Code](week_9.py)
+For this week we will modify our Gettysburg processing program from week 8 in order to generate a text file from the output rather than printing to the screen. Your program should have a new function called process_file which prints to the file (this method should almost be the same as the pretty_print function from last week. Keep in mind that we have print statements in main as well. Your program must modify the print statements from main as well.
