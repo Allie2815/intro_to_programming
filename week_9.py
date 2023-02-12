@@ -33,11 +33,11 @@ def process_line(line, dictionary):
 
 
 def process_file(dictionary, user_filename):
-    with open(user_filename, 'r+') as wf:
-        wf.write(f"{'Word' : <13}{'Count' : >13}" + '\n')
-        wf.write('-' * 26 + '\n')
+    with open(user_filename, 'a') as user_filename:
+        user_filename.write(f"{'Word' : <13}{'Count' : >13}" + '\n')
+        user_filename.write('-' * 26 + '\n')
         for key, val in sorted(dictionary.items(), key=lambda i: i[1], reverse=True):
-            wf.write(f"{key : <13}{val : >13}" + '\n')
+            user_filename.write(f"{key : <13}{val : >13}" + '\n')
 
 
 def main():
@@ -46,8 +46,9 @@ def main():
     with open('gettysburg.txt', 'r') as f:
         for line in f:
             process_line(line, dictionary)
+
     user_filename = input('Enter the file name: ')
-    with open(user_filename, 'r+') as wf:
+    with open(user_filename, 'w') as wf:
         wf.write('Length of dictionary: ' + str(len(dictionary)) + '\n')
     process_file(dictionary, user_filename)
 
