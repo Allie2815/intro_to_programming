@@ -62,3 +62,39 @@ Your program should adhere to PEP8 guidelines especially as it pertains to varia
 
 ## Week 9 [Week 9 Code](week_9.py)
 For this week we will modify our Gettysburg processing program from week 8 in order to generate a text file from the output rather than printing to the screen. Your program should have a new function called process_file which prints to the file (this method should almost be the same as the pretty_print function from last week. Keep in mind that we have print statements in main as well. Your program must modify the print statements from main as well.
+
+## Week 10 [Week 10 Code](week_10.py)
+Create a program which uses the Request library to make a GET request of the following API: Chuck Norris Jokes.  By default the API will deliver random jokes however you should choose category Science for your category and only generate jokes of this category unless you give the user to select a category which is also feasible.  I'll leave this up to you since it’s your program however defaulting to random is not acceptable.
+If you would prefer you can also use an alternative API from https://www.boredapi.com to generate a list of random things to do when you're bored or https://catfact.ninja/fact to generate a random cat fact.
+The program will receive a JSON response which includes various pieces of data. You should parse the JSON data to obtain the “value” key.
+If you choose the chuck Norris API you should output the “Value”.
+ If you choose boreapi you should output the "Activity" and the "Type". 
+If you choose Catfact you should output the "fact.  The following Requirements are the same regardless of which API you use.
+Your program should allow the user to request a joke, activity, or catfact as many times as they would like. You should make sure that your program does error checking at this point. If you ask the user to enter “Y” and they enter y, is that ok? Does it fail? If it fails, display a message for the user. There are other ways to handle this. Think about included string functions you might be able to call.
+
+## Week 11 [Week 11 Code](week_11.py)
+This week we’re going to demonstrate our knowledge of Python object oriented programming concepts by creating a simple cash register program.
+Your program must have one class called CashRegister.
+Your program will have an instance method called addItem which takes one parameter for price. The method should also keep track of the number of items in your cart.
+Your program should have two getter methods.
+getTotal – returns totalPrice
+getCount – returns the itemCount of the cart
+Your program must have a properly defined main function and a call to main.
+Your program must create an instance of the CashRegister class within your main function.
+Your program should have a loop in main which allows the user to continue to add items to the cart until they request to quit.
+Your program should print the total number of items in the cart.
+Your program should print the total $ amount of the cart.
+The output should be formatted as currency. Be sure to investigate the locale class. You will need to call locale.setlocale and locale.currency.
+
+
+## Week 12 - Final Project [Week 12 Code](week_12_final_project.py)
+Create a header for your program just as you have in the past.
+Create a Python Application which asks the user for their zip code or city (Your program must perform both a city and a zip lookup). You must ask the user which they want to perform with each iteration of the program.
+Use the zip code or city name in order to obtain weather forecast data from OpenWeatherMap.
+Display the weather forecast in a readable format to the user. Do not display the weather data in Kelvin, since this is not readable to the average person.  You should allow the user to choose between Celsius and Fahrenheit and ideally also Kelvin.
+Use comments within the application where appropriate in order to document what the program is doing. Comments should add value to the program and describe important elements of the program.
+Use functions including a main function and a properly defined call to main. You should have multiple functions.
+Allow the user to run the program multiple times to allow them to look up weather conditions for multiple locations.
+Validate whether the user entered valid data. If valid data isn’t presented notify the user. Your program should never crash with bad user input.
+Use the Requests library in order to request data from the webservice.
+Use Try blocks to ensure that your request was successful. If the connection was not successful display a message to the user.
